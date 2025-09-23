@@ -1,0 +1,27 @@
+#include <stdio.h>
+int a,b,c,d,total,avg;
+int main() {
+    printf("Enter the number a:");
+    scanf("%d",&a);
+    printf("Enter the number b:");
+    scanf("%d",&b);
+    printf("Enter the number c:");
+    scanf("%d",&c);
+    printf("Enter the number d:");
+    scanf("%d",&d);
+    if(a>b){
+        printf("a lesser b");
+    }
+        else{
+            printf("a greatr b");
+        }
+    return 0;
+
+
+Enter the number a:2
+Enter the number b:5
+Enter the number c:6
+Enter the number d:4
+a greater b
+
+

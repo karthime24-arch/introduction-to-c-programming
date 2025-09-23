@@ -1,0 +1,48 @@
+#include <stdio.h>
+char name,department,grade;
+int year,sem,mark1,mark2,mark3,mark4,mark5,total;
+float avg;
+void main() {
+    printf("Enter student name:");
+    scanf("%s",&name);
+    printf("Enter dep name:");
+    scanf("%s",&department);
+    printf("Enter year:");
+    scanf("%d",&year);
+    printf("Enter sem:");
+    scanf("%d",&sem);
+    printf("Enter the mark1:");
+    scanf("%d",&mark1);
+    printf("Enter the mark2:");
+    scanf("%d",&mark2);
+    printf("Enter the mark3:");
+    scanf("%d",&mark3);
+    printf("Enter the mark4:");
+    scanf("%d",&mark4);
+    printf("Enter the mark5:");
+    scanf("%d",&mark5);
+    total=mark1+mark2+mark3+mark4+mark5;
+    avg=(mark1+mark2+mark3+mark4+mark5)/5;
+    printf("Name:%S\n",name);
+    printf("Department:%s\n",department);
+    printf("Year:%d\n",year);
+    printf("Sem:%d\n",sem);
+    printf("Total:%d\n",total);
+    printf("Avg:%f\n",avg);
+    if(90<avg){
+        printf("Grade: A");
+        if(80<avg){
+            printf("Grade: B");  
+            if(70<avg){
+                printf("Grade: C");
+            }
+            
+        }
+    }
+    else{
+        printf("fail");
+    }
+    
+}
+
+

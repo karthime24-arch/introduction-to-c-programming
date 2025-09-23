@@ -1,0 +1,28 @@
+#include <stdio.h>
+int a,b,c,d,total,avg;
+int main() {
+    printf("Enter the number a:");
+    scanf("%d",&a);
+    printf("Enter the number b:");
+    scanf("%d",&b);
+    printf("Enter the number c:");
+    scanf("%d",&c);
+    printf("Enter the number d:");
+    scanf("%d",&d);
+    printf("add:%d\n",a+b);
+    printf("sub:%d\n",c-d);
+    printf("mul:%d\n",d*c);
+    printf("div:%d\n",c/a);
+
+    return 0;
+
+output
+
+Enter the number a:3
+Enter the number b:4
+Enter the number c:5
+Enter the number d:6
+add:7
+sub:-1
+mul:30
+div:1
