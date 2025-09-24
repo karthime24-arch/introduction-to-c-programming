@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main(){
+    int i=1,n,r;
+    printf("Enter a number:");
+    scanf("%d",&n);
+    printf("Enter the range: ");
+    scanf("%d",&r);
+    while(i<=r){
+        printf("%d * %d =%d \n",n,i,n*i);
+        i++;
+    }
+    return 0;
+}
+
+OUTPUT:
+
+
+Enter a number:8
+Enter the range: 20
+8 * 1 =8 
+8 * 2 =16 
+8 * 3 =24 
+8 * 4 =32 
+8 * 5 =40 
+8 * 6 =48 
+8 * 7 =56 
+8 * 8 =64 
+8 * 9 =72 
+8 * 10 =80 
+8 * 11 =88 
+8 * 12 =96 
+8 * 13 =104 
+8 * 14 =112 
+8 * 15 =120 
+8 * 16 =128 
+8 * 17 =136 
+8 * 18 =144 
+8 * 19 =152 
+8 * 20 =160 
