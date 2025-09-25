@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+    int number[5];
+    int i;
+    printf("Enter 5 number:\n");
+    for(i=0;i<5;i++){
+        scanf("%d",&number[i]);
+    }
+    printf("you enterd:\n");
+    for(i=0;i<5;i++){
+        printf("%d\n",number[i]);
+    }
+    return 0;
+    
+}
+
+
+OUTPUT
+
+
+Enter 5 number:
+24
+34
+56
+67
+89
+you enterd:
+24
+34
+56
+67
+89
