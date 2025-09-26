@@ -1,0 +1,79 @@
+#include <stdio.h>
+
+int main() {
+    int matrixa[2][2],matrixb[2][2],matrixc[2][2],add[2][2];
+    int i, j, k;
+
+    printf("Enter matrix a:\n");
+    for (i = 0; i < 2; i++) {
+        for (j = 0; j < 2; j++) {
+            printf("Element [%d][%d]: ", i, j);
+            scanf("%d", &matrixa[i][j]);
+        }
+    }
+
+    printf("Enter matrixb:\n");
+    for (i = 0; i < 2; i++) {
+        for (j = 0; j < 2; j++) {
+            printf("Element [%d][%d]: ", i, j);
+            scanf("%d", &matrixb[i][j]);
+        }
+    }
+     printf("Enter matrixc:\n");
+    for (i = 0; i < 2; i++) {
+        for (j = 0; j < 2; j++) {
+            printf("Element [%d][%d]: ", i, j);
+            scanf("%d", &matrixc[i][j]);
+        }
+    }
+
+    for (i = 0; i < 2; i++) {
+        for (j = 0; j < 2; j++) {
+            add[i][j] = 0;
+        }
+    }
+
+    for (i = 0; i < 2; i++) {
+        for (j = 0; j < 2; j++) {
+         {
+                add[i][j] = matrixa[i][j] + matrixb[i][j]+matrixc[i][j];
+            }
+        }
+    }
+
+    printf("addtion of the three matrices:\n");
+    for (i = 0; i < 2; i++) {
+        for (j = 0; j < 2; j++) {
+            printf("%d ", add[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+OUTPUT
+
+
+
+
+Enter matrix a:
+Element [0][0]: 1
+Element [0][1]: 2
+Element [1][0]: 3
+Element [1][1]: 4
+Enter matrixb:
+Element [0][0]: 1
+Element [0][1]: 2
+Element [1][0]: 3
+Element [1][1]: 4
+Enter matrixc:
+Element [0][0]: 1
+Element [0][1]: 2
+Element [1][0]: 3
+Element [1][1]: 4
+addtion of the three matrices:
+3 6 
+9 12 
+
